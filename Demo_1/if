@@ -1,0 +1,10 @@
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    apply_stylesheet(app, theme="light_red.xml")
+    myFont = QtGui.QFont("Comic Sans MS")
+    myFont.setPointSize(12)
+    QApplication.setFont(myFont)
+    window = Auth()
+    window.show()
+    sys.exit(app.exec())
