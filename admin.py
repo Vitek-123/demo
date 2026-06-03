@@ -32,6 +32,9 @@ class Admin(object):
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
         self.verticalLayout.addLayout(self.horizontalLayout)
+        self.pushButton_4 = QtWidgets.QPushButton(parent=Form)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.verticalLayout.addWidget(self.pushButton_4)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.lineEdit_find = QtWidgets.QLineEdit(parent=Form)
@@ -48,7 +51,7 @@ class Admin(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1057, 679))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1057, 644))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayout.addWidget(self.scrollArea)
@@ -63,6 +66,7 @@ class Admin(object):
         self.pushButton_2.setText(_translate("Form", "Просмотр заказов"))
         self.pushButton_3.setText(_translate("Form", "Добавить Товар"))
         self.pushButton.setText(_translate("Form", "Выход"))
+        self.pushButton_4.setText(_translate("Form", "Посмотреть заказы"))
 
 
 if __name__ == "__main__":

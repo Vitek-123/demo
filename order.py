@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'manager.ui'
+# Form implementation generated from reading ui file 'order.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.2
 #
@@ -9,19 +9,16 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Manager(object):
-    def manager(self, Form):
+class Order(object):
+    def order(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1000, 777)
+        Form.resize(1081, 771)
         self.verticalLayout = QtWidgets.QVBoxLayout(Form)
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
         spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)
         self.horizontalLayout.addItem(spacerItem)
-        self.label = QtWidgets.QLabel(parent=Form)
-        self.label.setObjectName("label")
-        self.horizontalLayout.addWidget(self.label)
         self.pushButton = QtWidgets.QPushButton(parent=Form)
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
@@ -29,23 +26,11 @@ class Manager(object):
         self.pushButton_2 = QtWidgets.QPushButton(parent=Form)
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout.addWidget(self.pushButton_2)
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.lineEdit_find = QtWidgets.QLineEdit(parent=Form)
-        self.lineEdit_find.setObjectName("lineEdit_find")
-        self.horizontalLayout_2.addWidget(self.lineEdit_find)
-        self.comboBox_filter = QtWidgets.QComboBox(parent=Form)
-        self.comboBox_filter.setObjectName("comboBox_filter")
-        self.horizontalLayout_2.addWidget(self.comboBox_filter)
-        self.comboBox_sort = QtWidgets.QComboBox(parent=Form)
-        self.comboBox_sort.setObjectName("comboBox_sort")
-        self.horizontalLayout_2.addWidget(self.comboBox_sort)
-        self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.scrollArea = QtWidgets.QScrollArea(parent=Form)
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1057, 644))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 1057, 675))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.verticalLayout.addWidget(self.scrollArea)
@@ -55,10 +40,9 @@ class Manager(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Менеджер"))
-        self.label.setText(_translate("Form", "TextLabel"))
-        self.pushButton.setText(_translate("Form", "Выход"))
-        self.pushButton_2.setText(_translate("Form", "Просмотр заказов"))
+        Form.setWindowTitle(_translate("Form", "Заказ"))
+        self.pushButton.setText(_translate("Form", "PushButton"))
+        self.pushButton_2.setText(_translate("Form", "Добавить заказ"))
 
 
 if __name__ == "__main__":
